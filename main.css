@@ -1,4 +1,3 @@
-/* Tạo khoảng cách giữa các chữ trong body và viền màn hình */
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ body {
   max-width: 1920px;
 }
 
-/* Wrapper: Căn chỉnh nội dung bên trong */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -16,16 +14,14 @@ body {
   color: #fff;
 }
 
-/* Tạo khoảng cách cho phần bên trái navbar */
 .navbar-left {
   font-size: 14px;
-  padding-left: 150px; /* Khoảng cách bên trái */
+  padding-left: 150px;
 }
 .navbar-right {
   padding-right: 150px;
 }
 
-/* Các thành phần bên trái navbar */
 .navbar-left .email {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -50,7 +46,6 @@ body {
   margin-right: 5px;
 }
 
-/* Navbar bên phải với icon */
 .navbar-right a {
   color: #fff;
   margin-left: 15px;
@@ -68,12 +63,12 @@ body {
   align-items: center;
   justify-content: flex-end;
   justify-content: space-between;
-  height: 100px; /* Đặt chiều cao cho menu để dễ dàng căn giữa */
-  padding: 0 0 10px 0; /* Đảm bảo có khoảng cách dưới menu */
+  height: 100px;
+  padding: 0 0 10px 0;
 }
 .menu .logo img {
-  height: 40px; /* Điều chỉnh kích thước logo */
-  margin-right: 20px; /* Khoảng cách giữa logo và menu */
+  height: 40px;
+  margin-right: 20px;
   padding-left: 150px;
 }
 
@@ -98,35 +93,34 @@ body {
   font-size: 16px;
 }
 .menu ul li::after {
-  content: ""; /* Tạo phần tử giả */
+  content: "";
   position: absolute;
-  bottom: -5px; /* Đặt vị trí bên dưới văn bản */
+  bottom: -5px;
   left: 0;
   width: 0;
-  height: 3px; /* Độ dày của gạch */
-  background-color: #ff5a3c; /* Màu gạch ngang */
-  transition: width 0.3s ease; /* Hiệu ứng mở rộng */
+  height: 3px;
+  background-color: #ff5a3c;
+  transition: width 0.3s ease;
 }
 
 .menu ul li:hover::after {
-  width: 100%; /* Mở rộng gạch ngang khi hover */
+  width: 100%;
 }
 
 .signup-btn {
-  background-color: #f2533d; /* Màu cam */
+  background-color: #f2533d;
   color: white !important;
-  padding: 10px 20px; /* Khoảng cách bên trong nút */
-  border-radius: 5px; /* Bo góc nút */
-  border: 2px solid #f2533d; /* Viền màu cam */
-  font-weight: bold; /* Chữ đậm */
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 2px solid #f2533d;
+  font-weight: bold;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 .signup-btn:service {
-  background-color: white; /* Nền trắng khi service */
+  background-color: white;
   color: #333 !important;
 }
 
-/* Cấu trúc cho phần mới */
 .new-section {
   display: flex;
   justify-content: space-between;
@@ -155,10 +149,10 @@ body {
 }
 
 .left-section h2 {
-  font-size: 50px; /* Chữ to hơn */
+  font-size: 50px;
   color: #333;
   margin-bottom: 20px;
-  line-height: 1.4; /* Điều chỉnh khoảng cách dòng */
+  line-height: 1.4;
 }
 .left-section h3 {
   font-size: 15px;
@@ -166,14 +160,14 @@ body {
   font-weight: 300;
 }
 .right-section {
-  position: absolute; /* Đưa phần tử ra khỏi luồng hiển thị mặc định */
-  left: 47%; /* Đưa khung về phía trái */
-  transform: translateX(-4%); /* Căn giữa phần tử */
-  background-color: #d3d3d3; /* Màu nền xám */
-  width: 650px; /* Đặt chiều rộng cho khung bên phải */
+  position: absolute;
+  left: 47%;
+  transform: translateX(-4%);
+  background-color: #d3d3d3;
+  width: 650px;
   padding: 20px;
-  margin-left: 20px; /* Khoảng cách giữa các phần */
-  top: -53px; /* Đặt khoảng cách từ trên xuống */
+  margin-left: 20px;
+  top: -53px;
   height: 430px;
   overflow: hidden;
 }
@@ -191,8 +185,8 @@ body {
 
 .start-membership {
   background-color: #f2533d;
-  color: white; /* Chữ trắng */
-  padding: 12px 25px; /* Khoảng cách bên trong nút */
+  color: white;
+  padding: 12px 25px;
   border-radius: 5px;
   border: 2px solid #f2533d;
   font-weight: 300;
@@ -399,8 +393,8 @@ body {
   height: 450px;
   border: 1px;
   background-color: #c4c4c4;
-  top: 105px; /* Cố định khoảng cách từ trên */
-  left: 340px; /* Cố định khoảng cách từ trái */
+  top: 105px;
+  left: 340px;
   z-index: 1;
 }
 .box-rating {
@@ -493,35 +487,35 @@ body {
 
 .service-boxes {
   display: grid;
-  grid-template-columns: repeat(3, 200px); /* 3 ô, mỗi ô rộng 200px */
-  row-gap: 20px; /* Khoảng cách dọc giữa các hàng */
-  column-gap: 58px; /* Khoảng cách ngang giữa các ô */
-  justify-content: center; /* Căn giữa các ô */
-  padding: 50px; /* Khoảng cách bên trong toàn lưới */
+  grid-template-columns: repeat(3, 200px);
+  row-gap: 20px;
+  column-gap: 58px;
+  justify-content: center;
+  padding: 50px;
 }
 
 .service-box {
-  width: 200px; /* Đảm bảo chiều rộng cố định */
-  height: 220px; /* Chiều cao tự động dựa trên nội dung */
-  background-color: #ffffff; /* Màu nền trắng */
-  border: 1px solid #eaeaea; /* Viền mỏng màu xám nhạt */
+  width: 200px;
+  height: 220px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
   border-radius: 10px; /* Bo góc */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
-  padding: 15px; /* Khoảng cách bên trong ô */
-  text-align: center; /* Căn giữa nội dung */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  text-align: center;
 }
 .service-text {
   margin-top: -39px;
 }
 .service-box h3 {
-  font-size: 16px; /* Kích thước chữ tiêu đề */
-  color: #333333; /* Màu chữ tiêu đề */
+  font-size: 16px;
+  color: #333333;
   margin-bottom: 20px;
 }
 
 .service-box p {
-  font-size: 12px; /* Kích thước chữ nội dung */
-  color: #c4c4c4; /* Màu chữ nội dung */
+  font-size: 12px;
+  color: #c4c4c4;
 }
 .service-box a {
   text-decoration: none;
@@ -564,18 +558,18 @@ body {
 }
 
 .feature-menu li::after {
-  content: ""; /* Tạo phần tử giả */
-  position: absolute; /* Đặt vị trí tuyệt đối */
-  bottom: 20px; /* Đặt ở dưới cùng của thẻ */
-  left: 0; /* Bắt đầu từ cạnh trái */
-  width: 0; /* Ban đầu chiều rộng là 0 */
-  height: 3px; /* Độ dày của gạch ngang */
-  background-color: orange; /* Màu cam */
-  transition: width 0.3s ease; /* Hiệu ứng mượt */
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: orange;
+  transition: width 0.3s ease;
 }
 
 .feature-menu li:hover::after {
-  width: 100%; /* Mở rộng gạch ngang khi hover */
+  width: 100%;
 }
 .feature-card {
   display: flex;
@@ -684,20 +678,20 @@ body {
   position: relative;
 }
 .unit-card_price {
-  display: inline-flex; /* Đặt icon và số trên cùng một hàng */
-  align-items: center; /* Căn giữa icon và số theo chiều dọc */
+  display: inline-flex;
+  align-items: center;
   gap: 1px;
   margin-bottom: 20px;
   font-weight: 1000;
 }
 
 .unit-card_price i {
-  font-size: 20px; /* Kích thước icon */
-  margin-right: 1px; /* Tạo khoảng cách nhỏ giữa icon và số */
+  font-size: 20px;
+  margin-right: 1px;
 }
 
 .unit-card_price span {
-  font-size: 20px; /* Đặt kích thước font cho số */
+  font-size: 20px;
 }
 .unit-location {
   position: absolute;
@@ -823,17 +817,17 @@ body {
 .testimonial-slide_left {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Căn giữa các phần tử trong testimonial-slide_left */
+  align-items: center;
 }
 .testimonial-slide_left img {
   margin-right: 240px;
   margin-left: 253px;
 }
 .testimonial-slide_left .testimonial-caption {
-  margin-top: 15px; /* Khoảng cách giữa ảnh và nội dung văn bản */
-  font-size: 16px; /* Kích thước chữ cho caption */
-  color: #4f4f4f; /* Màu chữ xám đậm */
-  max-width: 350px; /* Giới hạn chiều rộng để tránh quá dài */
+  margin-top: 15px;
+  font-size: 16px;
+  color: #4f4f4f;
+  max-width: 350px;
   margin-left: 340px;
   text-align: left;
 }
@@ -1057,10 +1051,10 @@ body {
   color: #ff5a3c;
 }
 .blog-description {
-  font-size: 16px; /* Kích thước chữ */
-  line-height: 26px; /* Khoảng cách giữa các dòng */
-  color: #8c8c8c; /* Màu chữ */
-  text-align: left; /* Căn thẳng hàng bên trái */
+  font-size: 16px;
+  line-height: 26px;
+  color: #8c8c8c;
+  text-align: left;
 }
 .blog-icon {
   display: flex;
@@ -1347,7 +1341,7 @@ body {
 }
 .footer-bottom div {
   position: relative;
-  padding-bottom: 10px; /* Tạo khoảng cách giữa nội dung và đường kẻ */
+  padding-bottom: 10px;
 }
 
 .footer-bottom div::after {
